@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sta Pattern.</title>
+    <style>
+        body {
+            color: blue;
+            font-size: 100px;
+            line-height: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="display"></div>
+
+
+    <script>
+        var m = 1,
+            x = 5;
+
+        for (let i = 1; i <= x; i++) {
+            for (let k = 1; k <= x - i; k++) {
+                document.write("&nbsp;&nbsp;");
+            }
+
+            for (j = 1; j <= m; j++) {
+                document.write("*");
+            }
+            document.write("<br/>");
+            m = m + 2;
+        }
+    </script>
+</body>
+
+</html>

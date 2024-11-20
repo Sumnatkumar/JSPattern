@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: blue;
+            font-size: 100px;
+            line-height: 1;
+        }
+        
+        .space {
+            color: red;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var n = 10;
+        if (n % 2 == 0) {
+            n = n - 1;
+        }
+        for (let i = 1; i <= n; i++) {
+            for (let j = 1; j <= n; j++) {
+                if (i == 1 || j == 1 || i == n || j == n || i == j || j == n - i + 1) {
+                    document.write("*");
+                } else {
+                    document.write(`<span class='space'>*</span>`);
+                }
+            }
+            document.write("<br/>");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Patern</title>
+    <style>
+        body {
+            color: blue;
+            font-size: 100px;
+            line-height: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var i, j, k, l, m, star = "*",
+            space = "&nbsp;&nbsp;",
+            x = 3;
+        for (i = x; i >= 1; i--) {
+
+            for (j = 1; j <= i; j++) {
+                document.write(star);
+            }
+            for (k = 1; k <= x - i; k++) {
+                document.write(space);
+            }
+            for (k = 2; k <= x - i; k++) {
+                document.write(space);
+            }
+            if (i == x) {
+                m = i - 1;
+            } else {
+                m = i;
+            }
+            for (l = 1; l <= m; l++) {
+                document.write(star);
+            }
+            document.write("<br/>");
+        }
+
+
+        for (i = 2; i <= x; i++) {
+
+            for (j = 1; j <= i; j++) {
+                document.write(star);
+            }
+            for (k = 1; k <= x - i; k++) {
+                document.write(space);
+            }
+            for (l = 2; l <= x - i; l++) {
+                document.write(space);
+            }
+
+            if (i == x) {
+                m = i - 1;
+            } else {
+                m = i;
+            }
+
+            for (l = 1; l <= m; l++) {
+                document.write(star);
+            }
+            document.write("<br/>");
+        }
+    </script>
+</body>
+
+</html>
